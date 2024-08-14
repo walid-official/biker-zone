@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Css Project</title>
+
+    <!-- Fontawsome  CSS CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-area max-w-full bg-[#264653]">
+      <div class="nav-container">
+        <nav class="flex justify-between py-5">
+          <div class="nav-logo text-4xl mt-1">
+            <a href="#" class="text-white">Honda</a>
+          </div>
+          <div class="nav-items flex">
+            <ul class="hidden md:flex mt-3">
+              <li><a class="text-xl text-white font-semibold mx-6 hover:text-[#E76F51] duration-500" href="#">Home</a></li>
+              <li><a class="text-xl text-white font-semibold mx-6 hover:text-[#E76F51] duration-500" href="#">Shope</a></li>
+              <li><a class="text-xl text-white font-semibold mx-6 hover:text-[#E76F51] duration-500" href="#">News</a></li>
+              <li><a class="text-xl text-white font-semibold mx-6 hover:text-[#E76F51] duration-500" href="#">Contact</a></li>
+            </ul>
+            <div class="log-in ml-8 hidden md:flex">
+              <button class="text-xl text-white font-semibold bg-[#E76F51] py-3 px-10 rounded">Login</button>
+            </div>
+            <div class="bar">
+              <i class="fa-solid fa-bars text-2xl text-white font-semibold mt-3 flex md:hidden"></i>
+            </div>
+          </div>
+
+          
+
+        </nav>
+      </div>
+
+    </header>
+</body>
+</html>
